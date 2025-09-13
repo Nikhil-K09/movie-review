@@ -10,6 +10,7 @@ import java.util.List;
 public class MovieService {
     @Autowired
     private MovieRepository movieRepository;
+
     public List<Movie> allMovies(){
         return movieRepository.findAll();
     }
